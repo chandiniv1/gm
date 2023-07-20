@@ -50,7 +50,7 @@ require (
 	github.com/celestiaorg/rsmt2d v0.9.0 // indirect
 	github.com/celestiaorg/utils v0.1.0 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
-	github.com/centrifuge/go-substrate-rpc-client/v4 v4.0.16 // indirect
+	github.com/centrifuge/go-substrate-rpc-client/v4 v4.0.12 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
@@ -280,4 +280,8 @@ replace github.com/cosmos/cosmos-sdk => github.com/rollkit/cosmos-sdk v0.46.13-r
 
 replace github.com/tendermint/tendermint => github.com/rollkit/cometbft v0.0.0-20230524013049-75272ebaee38
 
-replace github.com/rollkit/rollkit => /home/chandini/go/src/github.com/chandiniv1/rollkittest/rollkit
+replace github.com/rollkit/rollkit => ../rollkit
+
+replace github.com/centrifuge/go-substrate-rpc-client/v4 => ../../gsrpc
+
+// replace github.com/vedhavyas/go-subkey => github.com/vedhavyas/go-subkey/v2 v2.0.0
