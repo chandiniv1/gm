@@ -284,4 +284,6 @@ replace github.com/rollkit/rollkit => /home/chandini/go/src/github.com/chandiniv
 
 replace github.com/centrifuge/go-substrate-rpc-client/v4 => /home/chandini/go/src/github.com/chandiniv1/go-substrate-rpc-client
 
+replace github.com/osmosis-labs/osmosis/v16 => /home/chandini/go/src/github.com/chandiniv1/gmfork/gm
+
 // replace github.com/vedhavyas/go-subkey => github.com/vedhavyas/go-subkey/v2 v2.0.0
