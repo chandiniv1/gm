@@ -5,7 +5,9 @@ import (
 	"strconv"
 
 	"github.com/cosmos/cosmos-sdk/codec"
+	store "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/osmosis-labs/osmosis/v7/x/gamm/types"
@@ -22,7 +24,7 @@ func permContains(perms []string, perm string) bool {
 }
 
 type Keeper struct {
-	storeKey sdk.StoreKey
+	storeKey store.StoreKey
 	cdc      codec.BinaryCodec
 
 	paramSpace paramtypes.Subspace
@@ -34,7 +36,7 @@ type Keeper struct {
 	distrKeeper   types.DistrKeeper
 }
 
-func NewKeeper(cdc codec.BinaryCodec, storeKey sdk.StoreKey, paramSpace paramtypes.Subspace, accountKeeper types.AccountKeeper, bankKeeper types.BankKeeper, distrKeeper types.DistrKeeper) Keeper {
+func NewKeeper(cdc codec.BinaryCodec, storeKey store.StoreKey, paramSpace paramtypes.Subspace, accountKeeper types.AccountKeeper, bankKeeper types.BankKeeper, distrKeeper types.DistrKeeper) Keeper {
 	// Ensure that the module account are set.
 	moduleAddr, perms := accountKeeper.GetModuleAddressAndPermissions(types.ModuleName)
 	if moduleAddr == nil {
