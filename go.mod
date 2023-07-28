@@ -198,6 +198,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.9.2 // indirect
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
+	github.com/osmosis-labs/osmosis/v7 v7.3.0 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/petermattis/goid v0.0.0-20230317030725-371a4b8eda08 // indirect
@@ -283,5 +284,8 @@ replace github.com/tendermint/tendermint => github.com/rollkit/cometbft v0.0.0-2
 replace github.com/rollkit/rollkit => /home/chandini/go/src/github.com/chandiniv1/rollkittest/rollkit
 
 replace github.com/centrifuge/go-substrate-rpc-client/v4 => /home/chandini/go/src/github.com/chandiniv1/go-substrate-rpc-client
+
+replace  github.com/osmosis-labs/osmosis/v7 => /home/chandini/go/src/github.com/chandiniv1/gmfork/gm
+
 
 // replace github.com/vedhavyas/go-subkey => github.com/vedhavyas/go-subkey/v2 v2.0.0
